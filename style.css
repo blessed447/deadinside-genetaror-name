@@ -1,0 +1,333 @@
+@import url("https://fonts.cdnfonts.com/css/old-london");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import "./reset.css";
+
+body {
+  background: url(./img/background.png);
+  font-family: "Playfair", sans-serif;
+  overflow-y: scroll;
+}
+
+а {
+  text-decoration: none;
+}
+
+.container {
+  background-color: black;
+  height: 700px;
+  width: 645px;
+  margin-top: 3.5%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #a52b2b;
+  border-radius: 15px;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  gap: 12px;
+}
+
+.photos {
+  margin-top: 25px;
+  padding-left: 41px;
+  padding-bottom: 43px;
+  width: 250px;
+  height: 220px;
+}
+
+#result {
+  color: #fcfcee;
+  display: flex;
+  gap: 10px;
+  width: auto;
+  margin-left: 42.6%;
+  font-family: "Playfair", sans-serif;
+}
+
+.redline__names {
+  width: 200px;
+  border-top: 1px solid #a52b2b;
+  margin-left: 250px;
+}
+
+.generate {
+  color: white;
+  background-color: #a52b2b;
+  border-radius: 10%;
+  width: 110px;
+  height: 40px;
+  margin-left: 350px;
+  margin-top: 9px;
+  touch-action: manipulation;
+}
+
+#gender-select {
+  margin-left: 35px;
+  border: 1px solid #a52b2b;
+  font-size: 20px;
+}
+
+.result__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -180px;
+  padding: 30px;
+}
+
+.redline__split {
+  margin-top: 43px;
+  border-top: 1px solid #a52b2b;
+}
+
+.enemy {
+  display: flex;
+  gap: 30px;
+  padding-top: 13px;
+  padding-left: 330px;
+  font-family: "Old London", sans-serif;
+  font-weight: 550;
+  font-size: 26px;
+}
+
+.numbers {
+  font-size: 12px;
+}
+
+.eye__num {
+  display: flex;
+  gap: 63px;
+  padding-top: 36px;
+  padding-left: 57px;
+}
+
+.crosses {
+  display: flex;
+  gap: 21px;
+  padding-top: 54px;
+  padding-left: 33px;
+}
+
+.zxcursed__eye {
+  width: 170px;
+  height: 150px;
+  margin-top: -100px;
+  margin-left: 468px;
+  margin-bottom: 9px;
+  transform: rotate(-10deg);
+}
+
+@media (max-width: 800px) {
+  .container {
+    height: 650px;
+    width: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .numbers {
+    padding-right: 50px;
+  }
+  #result {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 250px;
+  }
+  .crosses {
+    display: none;
+  }
+  .zxcursed__eye {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 590px;
+  }
+  .titles {
+    font-size: 15px;
+  }
+  .redline__names {
+    width: 200px;
+    margin-left: 250px;
+  }
+  #result {
+    font-size: 16px;
+    margin-left: 47%;
+  }
+  .generate {
+    margin-left: 325px;
+  }
+  .enemy {
+    padding-left: 200px;
+    font-size: 23px;
+  }
+  .numbers {
+    font-size: 10px;
+  }
+  .crosses {
+    width: 100px;
+    height: auto;
+    padding-top: 24px;
+  }
+  .zxcursed__eye {
+    margin-top: -100px;
+    margin-left: 310px;
+    width: 130px;
+  }
+}
+@media (max-width: 484px) {
+  .container {
+    width: 98%;
+  }
+  .photos {
+    padding-left: 30px;
+    width: 180px;
+    height: 170px;
+    padding-left: 4%;
+    margin-bottom: 7%;
+  }
+
+  .redline__names {
+    padding-bottom: 13px;
+    margin-left: 40%;
+    width: 170px;
+  }
+  #result {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: -40px;
+    width: 1px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .result__name {
+    width: 180px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+  }
+
+  .generate {
+    margin-top: -20px;
+    margin-left: 180px;
+    height: 30px;
+  }
+
+  #gender-select {
+    margin-left: 180px;
+    width: auto;
+  }
+
+  .button__gender {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .redline__split {
+    width: auto;
+  }
+
+  .enemy {
+    padding-left: 110px;
+  }
+  .eye__num {
+    padding: 0px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .numbers {
+    padding-right: 0px;
+  }
+  .crosses {
+    width: 90px;
+    margin-top: 30px;
+  }
+  .zxcursed__eye {
+    width: 170px;
+    height: 95px;
+    margin-top: -60px;
+    margin-left: 230px;
+  }
+}
+
+@media (max-width: 376px) {
+  .container {
+    height: auto;
+  }
+  .titles {
+    font-size: 13px;
+  }
+
+  .button__gender {
+    margin-top: 180px;
+  }
+  #result {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  #gender-select {
+    margin-top: 4%;
+    margin-left: 53%;
+  }
+  .redline__names {
+    width: 140px;
+  }
+  .result__name {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .generate {
+    margin-top: -190px;
+  }
+  .redline__split {
+    margin-top: -70px;
+  }
+  .numbers {
+    padding-bottom: 15px;
+    font-size: 7px;
+  }
+  .juzo {
+    margin-top: -30px;
+  }
+
+  .crosses {
+    width: 80px;
+    margin-bottom: 22px;
+  }
+  @media (max-height: 740px) {
+    .container {
+      height: 700px;
+    }
+    .numbers {
+      font-size: 8px;
+    }
+  }
+  @media (max-height: 668px) {
+    .container {
+      height: auto;
+    }
+  }
+  @media (max-height: 581px) {
+    .container {
+      height: 70%;
+    }
+  }
+}
